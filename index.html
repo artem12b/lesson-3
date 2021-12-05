@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3</title>
+    <link rel="stylesheet" href="./fonts/font.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h1>Home work #3</h1>
+            <form>
+                <fieldset>
+                    <legend>Укажите ваши данные</legend>
+                    <p>
+                        <label> Ваше имя:
+                            <input type="text" placeholder="Введите своё имя" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Ваша фамилия:
+                            <input type="text" placeholder="Введите свою фамилию" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>Электронная почта:
+                            <input type="email" placeholder="Введите свою почту" required>
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Данные про ваш курс</legend>
+                    <p>
+                        <label for="course">Выберите ваш курс:</label>
+                        <select id="course">
+                            <option value="1" selected disabled>Выберите из списка</option>
+                            <option value="2">Front-End Basic</option>
+                            <option value="3">Front-End Pro</option>
+                        </select>
+                    </p>
+                    <p>
+                        <span>Выполняете ли вы домашние задания:</span><br>              
+                        <label>
+                            <input type="radio" name="homeRadio" value="one">
+                            <span>Да, выполняю</span>
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="homeRadio" value="two">
+                            <span>Нет, не выполняю</span>
+                        </label>
+                    </p>
+                    <p>
+                        <span>Дополнительная информация:</span><br>
+                        <label>
+                            <input type="checkbox" value="one">
+                            <span>Буду продолжать обучение</span>
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" value="two">
+                            <span>Дополнительно занимаюсь английским</span>
+                        </label>  
+                    </p>
+                </fieldset> 
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
